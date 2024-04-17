@@ -52,8 +52,9 @@ Socket programming finds applications in various domains, including web developm
 3.	File Transfer Protocol: Protocols like FTP (File Transfer Protocol) utilize socket programming for transferring files between a client and a server.
 4.	Networked Games: Online multiplayer games rely on socket programming to facilitate communication between game clients and servers.
 5.	RPC mechanisms: which allow processes to execute code on a remote server, often use socket programming for communication.
-Program:
-Client:
+
+##Program:
+##Client:
 ```
 import socket
 from datetime import datetime
@@ -69,12 +70,21 @@ if ack:
     print(ack)
 c.close()
 ```
-Server:
+
+##Server:
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
 print(s.getsockname())
 print(s.recv(1024).decode())
 s.send("Acknowledgement received from the server.".encode())
+##Output:
+##client:
+
+![Uploading 322446087-f00bcf67-6d7c-4c80-a986-8aeb77d94c69.png…]()
+
+##Server:
+![image](https://github.com/Arunkumar215/SocketStudy/assets/166196271/58aaaca4-0708-44b3-a8d0-e8a801508375)
+
 ## Result:
 Thus the study of Socket Programming Completed Successfully
